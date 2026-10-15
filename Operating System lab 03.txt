@@ -1,0 +1,43 @@
+Sidra hafeez
+Operating Systems Lab 3: Navigating the Linux File System
+NOTE: This is a reconstructed illustrative session log based on the commands and procedure documented in the submitted Lab 3 report. It is not an original terminal recording; outputs may differ on your Ubuntu system.
+
+$ TERM=dumb script -q session_log.txt
+$ pwd
+/home/ubuntu
+$ cd /etc
+$ pwd
+/etc
+$ cd ..
+$ pwd
+/
+$ cd /
+$ pwd
+/
+$ ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+$ ls -l
+total [system-dependent]
+drwxr-xr-x  [permissions, owner, size and date vary] boot
+drwxr-xr-x  [permissions, owner, size and date vary] dev
+drwxr-xr-x  [permissions, owner, size and date vary] etc
+drwxr-xr-x  [permissions, owner, size and date vary] home
+lrwxrwxrwx  [system-dependent] lib -> usr/lib
+lrwxrwxrwx  [system-dependent] sbin -> usr/sbin
+drwxr-xr-x  [permissions, owner, size and date vary] tmp
+drwxr-xr-x  [permissions, owner, size and date vary] usr
+drwxr-xr-x  [permissions, owner, size and date vary] var
+$ ls /etc
+[Directory listing of /etc; entries depend on the Ubuntu installation]
+$ ls /bin /sbin
+[Directory listing of /bin]
+[Directory listing of /sbin]
+$ ls ~
+[Visible files and directories in the user's home directory]
+$ ls -a ~
+.  ..  .bashrc  .profile  .config  [other entries depend on the user's home directory]
+$ ls -lh /boot
+[Long listing of /boot with human-readable file sizes; entries depend on the system]
+$ exit
+
+Script done.
